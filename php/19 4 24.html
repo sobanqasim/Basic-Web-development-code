@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Form</title>
+</head>
+<body>
+    <h2>PHP Form</h2>
+    <form action="process.php" method="post">
+        <label for="size">Enter the size of the array:</label>
+        <input type="number" id="size" name="size" required><br><br>
+
+        <label for="elements">Enter the elements of the array (comma-separated):</label>
+        <input type="text" id="elements" name="elements" required><br><br>
+
+        <label for="prime">Enter a number to check if it's prime:</label>
+        <input type="number" id="prime" name="prime" required><br><br>
+
+        <label for="factorial">Enter a number to calculate its factorial:</label>
+        <input type="number" id="factorial" name="factorial" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Report Form</h2>
+
+<form action="/action_page.php" method="post">
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Your full name">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Your email address">
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="Your password">
+
+  <label for="address">Address:</label>
+  <textarea id="address" name="address" placeholder="Your complete address" style="height:200px"></textarea>
+
+  <label for="country">Country:</label>
+  <select id="country" name="country">
+    <option value="pakistan">Pakistan</option>
+    <option value="usa">USA</option>
+    <option value="canada">Canada</option>
+  </select>
+
+  <label for="gender">Gender:</label>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+
+  <label for="hobbies">Hobbies:</label><br>
+  <input type="checkbox" id="reading" name="hobbies" value="reading">
+  <label for="reading">Reading</label><br>
+  <input type="checkbox" id="listeningMusic" name="hobbies" value="listeningMusic">
+  <label for="listeningMusic">Listening to Music</label><br>
+  <input type="checkbox" id="gardening" name="hobbies" value="gardening">
+  <label for="gardening">Gardening</label><br>
+  <input type="checkbox" id="swimming" name="hobbies" value="swimming">
+  <label for="swimming">Swimming</label><br>
+  <input type="checkbox" id="athletics" name="hobbies" value="athletics">
+  <label for="athletics">Athletics</label><br>
+
+  <label for="website">Your Website:</label>
+  <input type="url" id="website" name="website" placeholder="Your website URL (optional)">
+
+  <label for="otherInfo">Other Information:</label>
+  <textarea id="otherInfo" name="otherInfo" placeholder="Write any other information that is not present here" style="height:200px"></textarea>
+
+  <button type="submit">Submit Report</button>
+  <button type="reset">Erase Report Form</button>
+</form>
+
+</body>
+</html>

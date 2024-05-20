@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Name with JavaScript</title>
+</head>
+<body>
+    <script>
+        // Create a variable with your name
+        var myName = "Your Name";
+
+        // Create a new paragraph element
+        var paragraph = document.createElement("p");
+
+        // Create a text node containing your name
+        var textNode = document.createTextNode("My name is " + myName + ".");
+
+        // Append the text node to the paragraph element
+        paragraph.appendChild(textNode);
+
+        // Append the paragraph element to the body of the document
+        document.body.appendChild(paragraph);
+    </script>
+</body>
+</html>

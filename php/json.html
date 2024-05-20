@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Variables in HTML</title>
+</head>
+<body>
+<!-- HTML tag to display all variable values -->
+<p id="allVariables"></p>
+
+<script>
+// Define JSON object with Bollywood hero names
+var heroes = [
+    {"hero1": "Shah Rukh Khan"},
+    {"hero2": "Salman Khan"},
+    {"hero3": "Aamir Khan"},
+    {"hero4": "Akshay Kumar"},
+    {"hero5": "Hrithik Roshan"},
+    {"hero6": "Ranbir Kapoor"},
+    {"hero7": "Ajay Devgn"},
+    {"hero8": "Varun Dhawan"},
+    {"hero9": "Ranveer Singh"},
+    {"hero10": "Tiger Shroff"}
+];
+
+// Concatenate all hero names and values
+var allValues = "";
+for (var i = 0; i < heroes.length; i++) {
+    var heroNumber = "hero" + (i + 1);
+    allValues += heroNumber + " = " + heroes[i][heroNumber] + "<br>";
+}
+
+// Display all hero names and values in a single HTML tag
+document.getElementById("allVariables").innerHTML = allValues;
+</script>
+</body>
+</html>

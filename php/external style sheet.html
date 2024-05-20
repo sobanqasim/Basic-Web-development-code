@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Position Change on Hover</title>
+  
+</head>
+<style>
+    img {border-radius: 10px;}
+    .container {background-color: rgb(245, 244, 242);
+    border-radius: 10px;
+padding: 17px;}
+  .hover-image {
+    width: 100px;
+    height: auto;
+    animation: moveImage 2.5s infinite alternate; /* Call the animation */
+}
+
+@keyframes moveImage {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  100% {
+    transform: translateX(1200px); /* End position */
+  }
+}
+</style>
+<body>
+    
+  <div class="container">
+    <img src="askari.jpg" alt="Image" class="hover-image">
+  </div>
+</body>
+</html>

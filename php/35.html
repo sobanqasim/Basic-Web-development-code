@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sort Array in HTML</title>
+</head>
+<body>
+
+<p>Click the button to sort the array.</p>
+
+<button onclick="sortArray()">Sort Array</button>
+
+<p id="result"></p>
+
+<script>
+function sortArray() {
+  var arr = [3, 1, 7, 2, 5];
+  arr.sort(function(a, b){return a - b});
+  document.getElementById("result").innerHTML = "Sorted Array: " + arr;
+}
+</script>
+
+</body>
+</html>
